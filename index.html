@@ -1,80 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Delius&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Random Quote Generator</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
-    <h1 class="title">Techtitive.Fun</h1>
-    <div class="container-wrapper">
-        <div class="container">
-            <div class="contents">
-                <a href="https://techtitive.github.io/calculator" target="_blank" rel="noopener noreferrer">
-                    <div class="card">
-                        <div class="text">🧮 Calculator</div>
-                        <img class="image" src="images\calculator.jpg" alt="Calculator Image">
-                    </div>
-                </a>
-                <a href="https://techtitive.github.io/dictionary" target="_blank" rel="noopener noreferrer">
-                    <div class="card">
-                        <div class="text">📖 Dictionary</div>
-                        <img class="image" src="images\dictionary.jpg" alt="Dictionary Image">
-                    </div>
-                </a>
-                <a href="https://techtitive.github.io/counter" target="_blank" rel="noopener noreferrer">
-                    <div class="card">
-                        <div class="text">🔢 Counter</div>
-                        <img class="image" src="images\counter.jpg" alt="Counter Image">
-                    </div>
-                </a>
-                <a href="https://techtitive.github.io/weather" target="_blank" rel="noopener noreferrer">
-                    <div class="card">
-                        <div class="text">🌦️ Weather</div>
-                        <img class="image" src="images\weather.jpg" alt="Weather Image">
-                    </div>
-                </a>
-                <a href="https://techtitive.github.io/pokemon" target="_blank" rel="noopener noreferrer">
-                    <div class="card">
-                        <div class="text">🐉 Pokémon</div>
-                        <img class="image" src="images\pokemon.jpg" alt="Pokémon Image">
-                    </div>
-                </a>
-                <a href="https://techtitive.github.io/card-generator/" target="_blank" rel="noopener noreferrer">
-                    <div class="card">
-                        <div id="textcg" class="text">🎴 Card Generator</div>
-                        <img class="image" src="images\cardgenerator.jpg" alt="Card-Generator Image">
-                    </div>
-                </a>
-                <a href="https://techtitive.github.io/riddles" target="_blank" rel="noopener noreferrer">
-                    <div class="card">
-                        <div class="text">🧩 Riddles</div>
-                        <img class="image" src="images\riddles.jpg" alt="Riddles Image">
-                    </div>
-                </a>
-                <a href="https://techtitive.github.io/barcode" target="_blank" rel="noopener noreferrer">
-                    <div class="card">
-                        <div class="text">🔗 Barcode</div>
-                        <img class="image" src="images\barcode.jpg" alt="Barcode Image">
-                    </div>
-                </a>
-                <a href="https://techtitive.github.io/spacemorpher" target="_blank" rel="noopener noreferrer">
-                    <div class="card">
-                        <div id="textcg" class="text">🌌 Space Morpher</div>
-                        <img class="image" src="images\spacemorpher.jpg" alt="Space-Morpher Image">
-                    </div>
-                </a>
-                <a href="https://techtitive.github.io/quotes" target="_blank" rel="noopener noreferrer">
-                    <div class="card">
-                        <div id="textcg" class="text">❗ Quotes Generator</div>
-                        <img id="textcg" class="image" src="images\quotes.png" alt="Quotes Image">
-                    </div>
-                </a>
-            </div>
-        </div>
+
+<body>
+  <div class="wrapper">
+    <div class="container">
+      <div class="button-container">
+        <button id="favourite"><i class="fa-regular fa-heart"></i></button>
+        <button id="show-list">
+          <i class="fa-solid fa-list"></i>
+        </button>
+        <button id="copy"><i class="fa-solid fa-copy"></i></button>
+      </div>
+      <p id="quote">
+      </p>
+      <h3 id="author"></h3>
+      <button id="btn">Generate</button>
     </div>
+  </div>
+  <div class="favorite-container">
+    <div class="favorite-container">
+      <div class="favorite-header">
+        <h3>Favorite Quotes</h3>
+        <div class="favorite-buttons">
+          <button id="clear-button">Clear</button>
+          <button id="close-favorite">Close</button>
+        </div>
+      </div>
+      <ul id="list-of-favourite-quotes"></ul>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
 </body>
+
 </html>
