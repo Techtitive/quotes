@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
 * {
   padding: 0;
   margin: 0;
@@ -173,4 +175,12 @@ body {
   background-color: rgb(69, 121, 225);
   overflow-y: auto;
   margin: auto;
+}
+
+@media (max-width: 768px) {
+  .favorite-container {
+    font-size: 1.5rem;
+    color: #ffffff;
+  }
+  
 }
