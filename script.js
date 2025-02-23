@@ -42,8 +42,8 @@ const saveFavoritesToLocalStorage = () => {
 };
 
 // Function to fetch a random quote from the API
-const getQuote = async () => {
-  await fetch(url)
+const getQuote = () => {
+    fetch(url)
     .then((data) => data.json())
     .then((item) => {
       updateQuote(item.content, item.author);
