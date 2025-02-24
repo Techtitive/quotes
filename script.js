@@ -43,7 +43,7 @@ const saveFavoritesToLocalStorage = () => {
 
 // Function to fetch a random quote from the API
 const getQuote = () => {
-    fetch(url)
+    fetch(url, { mode: 'cors' })
     .then((data) => data.json())
     .then((item) => {
       updateQuote(item.content, item.author);
